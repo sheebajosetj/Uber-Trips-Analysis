@@ -64,11 +64,9 @@ df['Time Segment'] = pd.cut(df['Date/Time'].dt.minute,
 peak_hour = df.groupby(df['Date/Time'].dt.hour).size().idxmax()
 📈 Insights Summary
 Daily pattern: Evening commute (17:00-18:30) = Critical demand period
-
 Weekly pattern: 22% higher ridership on Thursdays vs Sundays
-
 Top performer: Base B02617 handles 31% of total rides
 
 Operational recommendation: Boost supply during 16:00-19:00 on weekdays
 
-Repository Structure
+
