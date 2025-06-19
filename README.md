@@ -30,18 +30,14 @@ Analysis of 1.5 million Uber pickups from August 2014 in New York City, revealin
 1. **Time-based patterns**:
    - Heat maps of pickup density
    - Daily line graphs (15-min intervals)
-   ![Time Pattern](https://via.placeholder.com/600x300?text=Time+Pattern+Graph)
-
+  
 2. **Geographical distribution**:
    - Scatter plot of pickups by location
-   ![Geo Distribution](https://via.placeholder.com/600x300?text=Geographical+Distribution)
-
+  
 3. **Service comparison**:
    - Bar chart of rides by base model
    - Pie chart of weekly distribution
-   ![Service Comparison](https://via.placeholder.com/600x300?text=Service+Comparison)
-
-
+  
 # Analyze peak periods
 peak_hour = df.groupby(df['Date/Time'].dt.hour).size().idxmax()
 
