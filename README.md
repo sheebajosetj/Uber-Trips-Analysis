@@ -41,32 +41,14 @@ Analysis of 1.5 million Uber pickups from August 2014 in New York City, revealin
    - Pie chart of weekly distribution
    ![Service Comparison](https://via.placeholder.com/600x300?text=Service+Comparison)
 
-## ⚙️ Technical Implementation
-
-### 🔧 Tools Used
-```python
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-from geopy import distance
-⚡ Key Processing Steps
-python
-# Convert to datetime
-df['Date/Time'] = pd.to_datetime(df['Date/Time'])
-
-# Create 15-min bins
-time_bins = [0, 15, 30, 45, 60]
-df['Time Segment'] = pd.cut(df['Date/Time'].dt.minute, 
-                            bins=time_bins, 
-                            labels=['00-15', '15-30', '30-45', '45-60'])
 
 # Analyze peak periods
 peak_hour = df.groupby(df['Date/Time'].dt.hour).size().idxmax()
-📈 Insights Summary
+
+# Insights Summary
 Daily pattern: Evening commute (17:00-18:30) = Critical demand period
 Weekly pattern: 22% higher ridership on Thursdays vs Sundays
 Top performer: Base B02617 handles 31% of total rides
 
-Operational recommendation: Boost supply during 16:00-19:00 on weekdays
-
+**Operational recommendation**: Boost supply during 16:00-19:00 on weekdays
 
