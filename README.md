@@ -1,7 +1,6 @@
 # Uber Pickup Data Analysis - August 2014
 
 ## Project Overview
-![Uber Analytics](https://via.placeholder.com/800x400?text=Uber+Pickup+Visualization) <!-- Add actual image path later -->
 Analysis of 1.5 million Uber pickups from August 2014 in New York City, revealing key patterns in ridership behavior and operational insights.
 
 ## 🔍 Key Findings
